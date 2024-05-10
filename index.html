@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>C# Basics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="separator">
+    </div>
+    <nav id="navbar">
+      <header class="navbar-header">The Basics of C#</header>
+      <p class="nav-element"><a href="#Introduction" class="nav-link">Introduction</a></p>
+      <p class="nav-element"><a href="#Case_Sensitivity" class="nav-link">Case Sensitivity</a></p>
+      <p class="nav-element"><a href="#Comments" class="nav-link">Comments</a></p>
+      <p class="nav-element"><a href="#Variables_and_Data_Types" class="nav-link">Variables and Data Types</a></p>
+      <p class="nav-element"><a href="#Control_Structures" class="nav-link">Control Structures</a></p>
+      <p class="nav-element"><a href="#Methods_and_Functions"  class="nav-link">Methods and Functions</a></p>
+      <p class="nav-element"><a href="#Classes_and_Objects" class="nav-link">Classes and Objects</a></p>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p class="section-text">C# (pronounced "C sharp") is a programming language developed by Microsoft, designed for building a wide range of applications that run on the .NET framework. The syntax of C# is similar to other C-style languages like C, C++, and Java, but it also has its own unique features</p>
+        <p class="section-text">Why Learn CSS?</p>
+        <ul>
+          <li>Versatility: C# is versatile, used in a wide range of applications including web development, game development, mobile app development, and enterprise software solutions.</li>
+          <li>Market Demand: There is a strong demand for C# developers in the job market, particularly in industries such as technology, finance, and healthcare.</li>
+          <li>NET Ecosystem: C# is part of the .NET ecosystem, offering access to extensive libraries, frameworks, and tools that streamline development and enhance productivity.</li>
+          <li>Cross-Platform Development: With .NET Core and later versions, C# enables cross-platform development, allowing you to build applications for Windows, macOS, Linux, and even mobile platforms like Android and iOS.</li>
+          <li>Learning Curve: C# has a relatively gentle learning curve, especially for those familiar with other C-style languages like Java or JavaScript, making it accessible to beginners while still offering advanced features for experienced developers.</li>
+        </ul> 
+      </section>
+      <section class="main-section" id="Case_Sensitivity">
+        <header>Case Sensitivity</header>
+        <p class="section-text">C# is case-sensitive, meaning that uppercase and lowercase letters are considered distinct. For example, "MyVariable" and "myvariable" are treated as different identifiers.</p>
+      </section>
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <p class="section-text">You can add comments to your code using // for single-line comments or /* */ for multi-line comments. Comments are ignored by the compiler and are used for documentation or notes within the code.</p>
+        <div class="code-div">
+        <code><span class="blue">//</span> This is a single-line comment<br></br>
+<span class="blue">/*</span> This is  <br>
+   &zwnj; &zwnj; &zwnj; a multi-line<br>
+   &zwnj; &zwnj; &zwnj; comment <span class="blue">*/</span><br></br>
+        </code>
+        </div>
+      </section>
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header>Variables and Data Types</header>
+        <p class="section-text">In C#, you declare variables with a specific data type. Common data types include int (integer), float (floating-point number), double (double-precision floating-point number), char (character), string (text), bool (Boolean), etc.</p>
+        <div class="code-div">
+        <code>
+          <span class="blue">int</span> myInt = 10;<br>
+          <span class="blue">float</span> myFloat = 3.14f;<br>
+          <span class="blue">char</span> myChar = 'A';<br>
+          <span class="blue">string</span> myString = "Hello, world!";<br>
+          <span class="blue">bool</span> myBool = true;<br></br>
+        </code>
+        </div>
+      </section>
+      <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <p class="section-text">C# supports common control structures like if statements, switch statements, for loops, while loops, and do-while loops for flow control.</p>
+        <div class="code-div">
+        <code>
+          <div class="control-structures">
+          <div class="control_structures_div">
+           <span class="blue">if</span> (condition)<br>
+           {<br>
+             // code block<br>
+           }<br>
+            <span class="blue">else if</span> (anotherCondition)<br>
+           {<br>
+              // code block<br>
+           }<br>
+           <span class="blue">else</span><br>
+            {<br>
+              // code block<br>
+           }<br></br>
+
+            <span class="blue">switch</span> (variable)<br>
+            {<br>
+              <span class="blue">case value1:</span><br>
+             // code block<br>
+              break;<br>
+             <span class="blue">case value2:</span><br>
+              // code block<br>
+              <span class="blue">break;</span><br>
+              <span class="blue">default:</span><br>
+              // code block<br>
+              <span class="blue">break;</span><br>
+           }<br></br>
+          </div>
+          <div class="control_structures_div">
+            <span class="blue">for</span> (int i = 0; i < 5; i++)<br>
+            {<br>
+              // code block<br>
+            }<br></br>
+
+            <span class="blue">while</span> (condition)<br>
+           {<br>
+           // code block<br>
+           }<br></br> 
+
+           <span class="blue">do</span><br>
+           {<br>
+           // code block<br>
+           } <span class="blue">while</span> (condition);<br></br>
+          </div>
+          </div>
+        </code>
+        </div>
+      </section>
+      <section class="main-section" id="Methods_and_Functions">
+        <header>Methods and Functions</header>
+        <p class="section-text">You can define methods (functions) to encapsulate reusable pieces of code. Methods can have parameters and return values.</p>
+        <p class="section-text">Functions in C# are essentially methods, named blocks of code that perform tasks or computations. Like methods, they handle parameters and return values, aiding in code structuring and modularity. Both methods and functions are essential for organizing and executing logic in C# programming.</p>
+        <div class="code-div">
+        <code>
+          // Method definition<br>
+          <span class="blue">int</span> Add(int a, int b)<br>
+          {<br>
+           <span class="blue">return</span> a + b;<br>
+          }<br>
+          // Method call<br>
+          <span class="blue">int</span> result = Add(5, 3);<br></br>
+        </code>
+        </div>
+      </section>
+      <section class="main-section" id="Classes_and_Objects">
+        <header>Classes and Objects</header>
+        <p class="section-text">In C#, classes define the structure and behavior of objects, encapsulating data and methods. They include constructors to initialize objects, destructors to clean up resources, and support inheritance and interfaces for code reuse and contract enforcement. Access modifiers like public and private control member visibility, ensuring encapsulation.</p>
+        <p class="section-text">To create objects, developers use the new keyword followed by the class name. Objects access class members using dot notation, allowing data manipulation and method invocation. C# supports both value types, storing data directly, and reference types, managing memory allocation and deallocation through the .NET garbage collector. In summary, C# classes facilitate modular, reusable, and maintainable code in software development.</p>
+        <div class="code-div">
+        <code>
+          <span class="blue">class</span> MyClass<br>
+          {<br>
+            // Fields (variables)<br>
+            public int MyField;<br></br>
+
+            // Constructor<br>
+            public <span class="blue">MyClass</span>(int initialValue)<br>
+            {<br>
+            MyField = initialValue;<br>
+            }<br></br>
+
+            // Method<br>
+            public void <span class="blue">MyMethod</span>()<br>
+            {<br>
+            // code block<br>
+            }<br>
+          }<br></br>
+
+          // Creating an object of MyClass<br>
+          MyClass myObject = new MyClass(10);<br></br>
+
+          // Accessing fields and methods of the object<br>
+          myObject.MyField = 20;<br>
+          myObject.MyMethod();<br></br>
+        </code>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

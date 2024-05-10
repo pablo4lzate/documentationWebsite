@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  .control-structures{
+    display:flex;
+    gap:40px;
+  }
+  
+  body{
+    margin: 10px 7% 10px 0px;
+    background-color:#AFB4C0;
+    color:#011a4c;
+    font-family:verdana;
+    text-align:justify;
+    display:flex;
+    gap:1em;
+    flex-direction:row;
+  }
+  
+  header{
+    font-size:2em;
+    color:#162d43;
+    font-weight:600;
+    text-align:left;
+    padding: 10px 0px 20px 0px;
+  }
+  
+  .blue{
+    color:blue;
+  }
+  
+  code{
+    font-size:1.3em;
+  }
+  
+  main{
+    width:70%;
+    margin-left:7%;
+  
+  }
+  
+  #navbar{
+    border-right:solid;
+    width:30%;
+    height:100%;
+    max-width:330px;
+    min-width:100px;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    justify-content:flex-start;
+    
+  }
+  
+  .nav-element{
+    border-bottom:solid;
+    width:100%;
+    font-size:1.1em;
+    text-align:left;
+  }
+  
+  .navbar-header{
+    border-bottom:solid;
+    margin-bottom:20px;
+    padding:0;
+  }
+  
+  #separator{
+    border-right:solid;
+    padding-right:20px;
+    width:30%;
+    height:100%;
+    max-width:330px;
+    text-align:left;
+    min-width:100px;
+  }
+  
+  .code-div{
+    background-color:#a1a7b5 ;
+    border-radius:10px;
+  }
+  
+  a{
+    color:inherit;
+    text-decoration:inherit;
+    cursor:pointer;
+  }
+  
+  a:hover{
+    color:#81899c;
+  }
+  
+  @media (max-width: 768px) {
+  body{
+    margin: 10px 0 10px 0px;
+    background-color:#AFB4C0;
+    color:#011a4c;
+    font-family:verdana;
+    text-align:justify;
+    display:flex;
+    gap:1em;
+    flex-direction:column;
+  }
+  
+  #navbar{
+    flex-direction:row;
+    flex-wrap:wrap;
+    position:sticky;
+    border-right:0;
+    border-bottom:solid;
+    max-width:100%;
+    min-height:0;
+    height:20vw;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    gap:0;
+    background-color:#a1a7b5;
+    z-index:1;
+    overflow-x:hidden;
+  }
+  
+  .navbar-header{
+    max-width:100%;
+    width:100%;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:0;
+    background-color:#AFB4C0;
+  }
+  
+  main{
+    margin:0 auto;
+    width:100%;
+    padding-left:7%;
+    padding-right:7%;
+  }
+  
+  #separator{
+  display:none;
+  }
+  
+  .nav-element{
+    border-bottom:0;
+    font-size:1em;
+    text-align:center;
+    border:0;
+    margin-top:0;
+    width:50%;
+  }
+  
+  .nav-div{
+    position:sticky;
+    background-color:blue;
+    height:200px;
+    width:100%;
+    display:flex;
+  }
+  
+  }
+  
